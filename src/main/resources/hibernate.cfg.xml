@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <property name="connection.url">jdbc:mysql://localhost:3306/module4</property>
+
+        <property name="connection.username">root</property>
+
+        <property name="connection.password">nekitolk4040304</property>
+
+        <property name="hibernate.show_sql">true</property>
+
+        <property name="hbm2ddl.auto">validate</property>
+
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <mapping class = "entities.Actor"/>
+        <mapping class = "entities.Address"/>
+        <mapping class = "entities.Category"/>
+        <mapping class = "entities.City"/>
+        <mapping class = "entities.Country"/>
+        <mapping class = "entities.Customer"/>
+        <mapping class = "entities.Film"/>
+        <mapping class = "entities.FilmText"/>
+        <mapping class = "entities.Language"/>
+        <mapping class = "entities.Payment"/>
+        <mapping class = "entities.Rental"/>
+        <mapping class = "entities.Staff"/>
+        <mapping class = "entities.Store"/>
+        <mapping class = "entities.Inventory"/>
+
+
+
+    </session-factory>
+</hibernate-configuration>
